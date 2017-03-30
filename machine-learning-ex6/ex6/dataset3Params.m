@@ -28,9 +28,11 @@ for i=vec
   for j=vec
     model= svmTrain(X, y, i, @(x1, x2) gaussianKernel(x1, x2, j));
     predictions = svmPredict(model, Xval);
-    if (cost > mean(double(predictions ~= yval)))
+    tmp = mean(double(predictions ~= yval));
+    if (cost > tmp)
       C=i;
       sigma=j;
+      cost = tmp;
     end
   end
 end

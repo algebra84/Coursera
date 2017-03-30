@@ -1,0 +1,9 @@
+The following SSH key was added to your account:
+
+GitHub Desktop - dadiaohtl
+45:39:0e:af:5a:76:f3:f7:b6:12:d7:9f:99:1c:e6:3b
+
+If you believe this key was added in error, you can remove the key and disable
+access at the following location:
+
+https://github.com/settings/keys
